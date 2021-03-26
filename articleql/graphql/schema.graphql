@@ -1,0 +1,14 @@
+type Article {
+    id: Int!
+    lyrics: String!
+    title: String!
+    speaker: String
+    from: String
+    video_url: String
+    script: String
+}
+
+type Query {
+    articles: [Article]!
+    article(id: Int!): Article
+}
